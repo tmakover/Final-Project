@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Use a monospaced font */
+body {
+    font-family: "Courier New", Consolas, monospace;
+    color: #3d3d3d;
+    background-color: #f5e8d0;
+    padding: 20px;
+}
+
+/* Styling for header image */
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid #9cc97a;
+}
+
+/* Style for the form container */
+#mealForm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 2px solid #dab894;
+}
+
+/* Styling for headings */
+h2, h3 {
+    color: #6a994e;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/* Styling for labels and inputs */
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: "Courier New", Courier, monospace;
+    background-color: #fffaf2;
+}
+
+/* Styling for the meal plan sections */
+#inputMealPlan {
+    margin-top: 20px;
+}
+
+#inputMealPlan h3 {
+    color: #3d3d3d;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    border-bottom: 2px solid #6a994e;
+    padding-bottom: 5px;
+}
+
+/* Styling for buttons */
+button {
+    margin-top: 1.5rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #6a994e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Courier New", Courier, monospace;
+}
+
+button:hover {
+    background-color: #517642;
+}
+
+button:focus {
+    outline: 2px solid #80bdff;
+}
+
+/* Button colors for each button */
+#createMealPlan {
+    background-color: #40916c;
+}
+
+#eraseForm {
+    background-color: #e63946;
+}
+
+#printMealPlan {
+    background-color: #ffba08;
+}
+
+#downloadMealPlan {
+    background-color: #4d6aaf;
+}
+
+/* Hover effects for buttons */
+#createMealPlan:hover {
+    background-color: #386f59;
+}
+
+#eraseForm:hover {
+    background-color: #d62839;
+}
+
+#printMealPlan:hover {
+    background-color: #e0a800;
+}
+
+#downloadMealPlan:hover {
+    background-color: #3d4f86;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Styling for meal plan output */
+.meal-plan-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    font-family: "Courier New", monospace;
+    border: 2px solid #6a994e;
+}
+
+/* Styling for heading */
+.meal-plan-container h1 {
+    text-align: center;
+    color: #6a994e;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.meal-plan-container h2 {
+    text-align: center;
+    color: #6a994e;
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+
+/* Styling for the day sections */
+.day-section {
+    margin-top: 20px;
+    border-top: 2px solid #dab894;
+    padding-top: 10px;
+}
+
+.day-section h3 {
+    color: #3d3d3d;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* Styling for each meal */
+.meal-plan-container p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.meal-plan-container p strong {
+    color: #6a994e;
+}
+
+/* Styling for screens that are smaller */
+@media (max-width: 600px) {
+    #mealForm {
+        padding: 1.5rem;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .meal-plan-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .meal-plan-container h2 {
+        font-size: 1.4rem;
+    }
+
+    .day-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .meal-plan-container p {
+        font-size: 0.9rem;
+    }
+}

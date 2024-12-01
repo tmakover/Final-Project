@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WEB-115 Final Project</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="projectJS.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <!-- Add banner image created with Canva -->
+             <img src="Build Your Meal Plan.png" alt="Banner Image">
+        </header>
+
+        <!-- A form to collect the user's input -->
+        <form id="mealForm">
+            <h2>Enter Personal Information</h2>
+
+            <!-- User's name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <!-- User's email address, will be validated in JavaScript -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <!-- User's weekly goal -->
+            <label for="goal">Your Weekly Goal:</label>
+            <input type="text" id="goal" name="goal"><br><br>
+
+            <!-- Meals for each day of the week -->
+            <h2>Your Meal Plan for the Week</h2>
+
+            <div id="inputMealPlan">
+                <!-- Monday Meal Plan -->
+                <h3>Monday Meal Plan</h3>
+                <label for="breakfastMonday">Monday Breakfast:</label>
+                <input type="text" id="breakfastMonday" name="breakfastMonday"><br>
+
+                <label for="firstMondaySnack">Monday Snack #1:</label>
+                <input type="text" id="firstMondaySnack" name="firstMondaySnack"><br>
+
+                <label for="lunchMonday">Monday Lunch:</label>
+                <input type="text" id="lunchMonday" name="lunchMonday"><br>
+
+                <label for="secondMondaySnack">Monday Snack #2:</label>
+                <input type="text" id="secondMondaySnack" name="secondMondaySnack"><br>
+
+                <label for="dinnerMonday">Monday Dinner:</label>
+                <input type="text" id="dinnerMonday" name="dinnerMonday"><br>
+
+                <!-- Tuesday Meal Plan -->
+                <h3>Tuesday Meal Plan</h3>
+                <label for="breakfastTuesday">Tuesday Breakfast:</label>
+                <input type="text" id="breakfastTuesday" name="breakfastTuesday"><br>
+
+                <label for="firstTuesdaySnack">Tuesday Snack #1:</label>
+                <input type="text" id="firstTuesdaySnack" name="firstTuesdaySnack"><br>
+
+                <label for="lunchTuesday">Tuesday Lunch:</label>
+                <input type="text" id="lunchTuesday" name="lunchTuesday"><br>
+
+                <label for="secondTuesdaySnack">Tuesday Snack #2:</label>
+                <input type="text" id="secondTuesdaySnack" name="secondTuesdaySnack"><br>
+
+                <label for="dinnerTuesday">Tuesday Dinner:</label>
+                <input type="text" id="dinnerTuesday" name="dinnerTuesday"><br>
+
+                <!-- Wednesday Meal Plan -->
+                <h3>Wednesday Meal Plan</h3>
+                <label for="breakfastWednesday">Wednesday Breakfast:</label>
+                <input type="text" id="breakfastWednesday" name="breakfastWednesday"><br>
+
+                <label for="firstWednesdaySnack">Wednesday Snack #1:</label>
+                <input type="text" id="firstWednesdaySnack" name="firstWednesdaySnack"><br>
+
+                <label for="lunchWednesday">Wednesday Lunch:</label>
+                <input type="text" id="lunchWednesday" name="lunchWednesday"><br>
+
+                <label for="secondWednesdaySnack">Wednesday Snack #2:</label>
+                <input type="text" id="secondWednesdaySnack" name="secondWednesdaySnack"><br>
+
+                <label for="dinnerWednesday">Wednesday Dinner:</label>
+                <input type="text" id="dinnerWednesday" name="dinnerWednesday"><br>
+
+                <!-- Thursday Meal Plan -->
+                <h3>Thursday Meal Plan</h3>
+                <label for="breakfastThursday">Thursday Breakfast:</label>
+                <input type="text" id="breakfastThursday" name="breakfastThursday"><br>
+
+                <label for="firstThursdaySnack">Thursday Snack #1:</label>
+                <input type="text" id="firstThursdaySnack" name="firstThursdaySnack"><br>
+
+                <label for="lunchThursday">Thursday Lunch:</label>
+                <input type="text" id="lunchThursday" name="lunchThursday"><br>
+
+                <label for="secondThursdaySnack">Thursday Snack #2:</label>
+                <input type="text" id="secondThursdaySnack" name="secondThursdaySnack"><br>
+
+                <label for="dinnerThursday">Thursday Dinner:</label>
+                <input type="text" id="dinnerThursday" name="dinnerThursday"><br>
+
+                <!-- Friday Meal Plan -->
+                <h3>Friday Meal Plan</h3>
+                <label for="breakfastFriday">Friday Breakfast:</label>
+                <input type="text" id="breakfastFriday" name="breakfastFriday"><br>
+
+                <label for="firstFridaySnack">Friday Snack #1:</label>
+                <input type="text" id="firstFridaySnack" name="firstFridaySnack"><br>
+
+                <label for="lunchFriday">Friday Lunch:</label>
+                <input type="text" id="lunchFriday" name="lunchFriday"><br>
+
+                <label for="secondFridaySnack">Friday Snack #2:</label>
+                <input type="text" id="secondFridaySnack" name="secondFridaySnack"><br>
+
+                <label for="dinnerFriday">Friday Dinner:</label>
+                <input type="text" id="dinnerFriday" name="dinnerFriday"><br>
+
+                <!-- Saturday Meal Plan -->
+                <h3>Saturday Meal Plan</h3>
+                <label for="breakfastSaturday">Saturday Breakfast:</label>
+                <input type="text" id="breakfastSaturday" name="breakfastSaturday"><br>
+
+                <label for="firstSaturdaySnack">Saturday Snack #1:</label>
+                <input type="text" id="firstSaturdaySnack" name="firstSaturdaySnack"><br>
+
+                <label for="lunchSaturday">Saturday Lunch:</label>
+                <input type="text" id="lunchSaturday" name="lunchSaturday"><br>
+
+                <label for="secondSaturdaySnack">Saturday Snack #2:</label>
+                <input type="text" id="secondSaturdaySnack" name="secondSaturdaySnack"><br>
+
+                <label for="dinnerSaturday">Saturday Dinner:</label>
+                <input type="text" id="dinnerSaturday" name="dinnerSaturday"><br>
+
+                <!-- Sunday Meal Plan -->
+                <h3>Sunday Meal Plan</h3>
+                <label for="breakfastSunday">Sunday Breakfast:</label>
+                <input type="text" id="breakfastSunday" name="breakfastSunday"><br>
+
+                <label for="firstSundaySnack">Sunday Snack #2:</label>
+                <input type="text" id="firstSundaySnack" name="firstSundaySnack"><br>
+
+                <label for="lunchSunday">Sunday Lunch:</label>
+                <input type="text" id="lunchSunday" name="lunchSunday"><br>
+
+                <label for="secondSundaySnack">Sunday Snack #2:</label>
+                <input type="text" id="secondSundaySnack" name="secondSundaySnack"><br>
+
+                <label for="dinnerSunday">Sunday Dinner:</label>
+                <input type="text" id="dinnerSunday" name="dinnerSunday"><br>
+            </div>
+
+            <!-- Create meal plan -->
+            <button type="button" id="createMealPlan">Create Meal Plan</button>
+
+            <!-- Erase form -->
+            <button type="button" id="eraseForm">Clear Meal Plan</button>
+
+            <!-- Print meal plan -->
+            <button type="button" id="printMealPlan">Print Meal Plan</button>
+
+            <!-- Download meal plan -->
+             <button type="button" id="downloadMealPlan">Download Meal Plan</button>
+        </form>
+    </body>
+</html>
